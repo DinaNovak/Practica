@@ -11,7 +11,7 @@ using praktika;
 namespace praktika.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240322113456_Initial")]
+    [Migration("20240323060117_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

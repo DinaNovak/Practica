@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,22 +29,30 @@ namespace praktika
         {
             var login = LoginBox.Text;
             var pass = PasswordBox.Text;
+            var email = EmailBox.Text;
             var context = new AppDbContext();
             var user_exists = context.Users.FirstOrDefault(x => x.Login== login);
-            if (EmailBox.Text.Contains("@gmail.com")||(EmailBox.Text.Contains("@mail.ru"))||(EmailBox.Text.Contains("@yandex.ru")) == false) ;
+            if ((!Regex.IsMatch(email, @"^[a-zA-Z0-9_.+-]+@(mail\.ru||gmail\.com||yandex\.ru)$" )))
             {
-                MessageBox.Show("Неверный адрес почты");
+                Mebox.Text = "";
+                Mebox.Text = "Неверный адрес почты";
             }
             if (user_exists is not null)
             {
-                MessageBox.Show("Такой пользователь уже в клубе крутышек");
-                return;
+                Mebox.Text = "";
+                Mebox.Text = "Такой пользователь уже в клубе крутышек";
 
             }
-            var user = new User {  Login = login, Password = pass };
+            if (PasswordBox.Text.Contains('.') == false|| PasswordBox.Text.Contains('+') ==false|| PasswordBox.Text.Contains('-') == false || PasswordBox.Text.Contains('$') == false);
+            {
+                Mebox.Text = "";
+                Mebox.Text="Добавьте обязательные знаки!";
+            }
+            var user = new User {  Login = login, Password = pass, Email = email};
             context.Users.Add(user);    
             context.SaveChanges();
-            MessageBox.Show("Welvome to the club, buddy");
+            Mebox.Text = "";
+            Mebox.Text="Welvome to the club, buddy";
 
          
         }

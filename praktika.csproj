@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <None Remove="Resours\pngwing.com %282%29.png" />
+    <None Remove="Resours\pngwing.com %283%29.png" />
+    <None Remove="Resours\pngwing.com %284%29.png" />
+    <None Remove="Resours\pngwing.com.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +25,9 @@
 
   <ItemGroup>
     <Resource Include="Resours\pngwing.com (2).png" />
+    <Resource Include="Resours\pngwing.com (3).png" />
+    <Resource Include="Resours\pngwing.com (4).png" />
+    <Resource Include="Resours\pngwing.com.png" />
   </ItemGroup>
 
 </Project>

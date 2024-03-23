@@ -30,10 +30,14 @@ namespace praktika
             var user = context.Users.SingleOrDefault(x => x.Login == Login && x.Password == password);
             if (user is null)
             {
-                MessageBox.Show("Неправильный логин или пароль!");
+                // MessageBox.Show("Неправильный логин или пароль!"); 
+                Mebox.Text= "";
+                Mebox.Text = "Неправильный логин или пароль!";
                 return;
             }
-            MessageBox.Show("Вы успешно вошли в аккаунт!");
+            Mebox.Text = "";
+            Mebox.Text = "Вы успешно вошли в аккаунт!";
+            //MessageBox.Show("Вы успешно вошли в аккаунт!");
         }
 
         private void Zareg_Click(object sender, RoutedEventArgs e)

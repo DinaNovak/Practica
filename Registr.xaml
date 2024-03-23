@@ -8,11 +8,12 @@
         Title="Registr" Height="450" Width="800" Background="Purple">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,17 +22,18 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Регистрация" Grid.ColumnSpan="2" FontSize="30" Foreground="Gold" Grid.Column="2" Margin="0,24,0,63" Grid.RowSpan="2"/>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Margin="98,76,98,56" RenderTransformOrigin="0.509,0.519" Grid.RowSpan="2" Name="EmailBox"/>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Margin="98,10,98,33" Grid.Row="2" RenderTransformOrigin="0.509,0.519" Name="PasswordBox"/>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Margin="98,43,98,1" Grid.Row="1" RenderTransformOrigin="0.509,0.519" Name="LoginBox"/>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Margin="98,65,98,66" Grid.Row="2" RenderTransformOrigin="0.509,0.519" Grid.RowSpan="2"/>
-        <Image Margin="46,76,61,46" Source="/Resours/pngwing.com (4).png" Stretch="Fill" Grid.Column="1" Grid.RowSpan="2"/>
-        <Image Grid.Column="1" Margin="46,14,64,33" Grid.Row="2" Source="/Resours/pngwing.com.png" Stretch="Fill"/>
-        <Image Grid.Column="1" Margin="46,69,64,66" Grid.Row="2" Source="/Resours/pngwing.com.png" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image Grid.Column="1" Margin="49,46,67,85" Source="/Resours/pngwing.com (2).png" Stretch="Fill" Grid.Row="1" Grid.RowSpan="2"/>
-        <TextBlock Text="Уже зарегистрированы?" Foreground="Gold" FontSize="20" Grid.ColumnSpan="3" Grid.Column="1" Margin="62,41,98,47" Grid.RowSpan="2" Grid.Row="3"/>
-        <Button Background="Purple" Content="Авторизироваться" BorderBrush="Purple" Foreground="Gold" FontSize="20" Grid.ColumnSpan="2" Grid.Column="2" Margin="125,26,20,4" Grid.Row="3" Click="Button_Click_1"/>
-        <Button Background="Gold" Content="Зарегистрироваться" FontSize="15" Grid.Column="2" Margin="5,83,5,33" Grid.Row="3" Grid.RowSpan="2" Click="Button_Click"/>
+        <TextBlock Text="Регистрация" Grid.ColumnSpan="3" FontSize="30" Foreground="Gold" Grid.Column="2" Margin="150,69,143,64" Grid.RowSpan="2"/>
+        <TextBox Grid.Column="2" Grid.ColumnSpan="3" Margin="98,23,98,23" RenderTransformOrigin="0.509,0.519" Name="EmailBox" Grid.Row="1"/>
+        <TextBox Grid.Column="2" Grid.ColumnSpan="3" Margin="98,31,98,9" Grid.Row="2" RenderTransformOrigin="0.509,0.519" Name="PasswordBox"/>
+        <TextBox Grid.Column="2" Grid.ColumnSpan="3" Margin="98,69,98,62" Grid.Row="1" RenderTransformOrigin="0.509,0.519" Name="LoginBox" Grid.RowSpan="2"/>
+        <TextBox Grid.Column="2" Grid.ColumnSpan="3" Margin="98,86,98,44" Grid.Row="2" RenderTransformOrigin="0.509,0.519" Grid.RowSpan="2"/>
+        <Image Margin="45,17,62,17" Source="/Resours/pngwing.com (4).png" Stretch="Fill" Grid.Column="2" Grid.Row="1"/>
+        <Image Grid.Column="2" Margin="49,29,61,16" Grid.Row="2" Source="/Resours/pngwing.com.png" Stretch="Fill"/>
+        <Image Grid.Column="2" Margin="48,82,62,52" Grid.Row="2" Source="/Resours/pngwing.com.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image Grid.Column="2" Margin="49,68,67,62" Source="/Resours/pngwing.com (2).png" Stretch="Fill" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock Text="Уже зарегистрированы?" Foreground="Gold" FontSize="20" Grid.ColumnSpan="2" Grid.Column="2" Margin="52,50,40,0" Grid.Row="3"/>
+        <Button Background="Purple" Content="Авторизироваться" BorderBrush="Purple" Foreground="Gold" FontSize="20" Grid.ColumnSpan="2" Grid.Column="3" Margin="120,44,0,5" Grid.Row="3" Click="Button_Click_1"/>
+        <Button Background="Gold" Content="Зарегистрироваться" FontSize="15" Grid.Column="3" Margin="5,82,5,29" Grid.Row="3" Click="Button_Click" Grid.RowSpan="2"/>
+        <TextBlock Foreground="Gold" Grid.ColumnSpan="3" Margin="0,0,0,10" FontSize="25" Name="Mebox" TextAlignment="Center" Grid.Column="2"/>
     </Grid>
 </Window>
