@@ -120,9 +120,12 @@ C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.GeneratedMSB
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.AssemblyInfoInputs.cache
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.AssemblyInfo.cs
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.csproj.CoreCompileInputs.cache
-C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.csproj.CopyComplete
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.dll
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\refint\praktika.dll
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.pdb
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.genruntimeconfig.cache
 C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\ref\praktika.dll
+C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.sourcelink.json
+C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\praktika.csproj.Up2Date
+C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\Window1.g.cs
+C:\Users\student\Desktop\Practica\obj\Debug\net7.0-windows\Window1.baml

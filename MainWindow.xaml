@@ -17,20 +17,22 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
+            
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Margin="114,45,126,26" Name="LoginBox"/>
-        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Margin="114,101,126,81" Name="PasswordBox" Grid.RowSpan="2"/>
+        <PasswordBox Grid.Row="1"  Grid.Column="2" Grid.ColumnSpan="3" Margin="114,101,126,81" Name="PasswordBox" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="1" Visibility="Collapsed" Grid.Column="2" Grid.ColumnSpan="3" Margin="114,101,126,81" Name="TextBox1" Grid.RowSpan="2"/>
         <TextBlock Text="Еще не зарегистрированы?" Grid.ColumnSpan="4" Grid.Column="2" Margin="28,38,132,27" Grid.Row="2" FontSize="20" Foreground="Yellow" />
         <Button Content="Регистрация!" BorderBrush="Purple" Foreground="Yellow" Background="Purple" FontSize="20" Grid.Column="3" Margin="121,33,0,40" Grid.Row="2" HorizontalAlignment="Left" Width="140" Name="Zareg" Click="Zareg_Click" Grid.ColumnSpan="2" />
         <Button Content="Войти" FontSize="30" Background="Gold" Grid.Column="2" Grid.Row="2" Margin="154,74,6,77" Click="Button_Click" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Image Margin="67,96,51,77" Source="Resours/pngwing.com.png" Stretch="Fill" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"/>
         <Image Margin="69,47,55,26" Source="Resours/pngwing.com (2).png" Stretch="Fill" Grid.Column="2" Grid.Row="1"/>
         <TextBlock Text="Авторизация" Grid.ColumnSpan="3" FontSize="30" Foreground="Gold" Grid.Column="2" Margin="145,102,145,63" Grid.RowSpan="2"/>
-        <Button Background="{x:Null}" BorderBrush="Purple" Grid.Column="4" Margin="50,26,50,26" Grid.Row="1">
-            <Image Source="Resours/pngwing.com (3).png" Height="47" Width="60"/>
+        <Button Background="{x:Null}" BorderBrush="Purple" Grid.Column="4" Margin="50,26,50,26" Grid.Row="1" Click="Button_Click_1">
+            <Image Name="Glazik" Source="Resours/1.png" Height="47" Width="60"/>
         </Button>
         <TextBlock Foreground="Gold" Grid.ColumnSpan="3" FontSize="25" Name="Mebox" TextAlignment="Center" Margin="0,4,0,17" Grid.Column="2"/>
     </Grid>

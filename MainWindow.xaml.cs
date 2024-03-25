@@ -25,7 +25,7 @@ namespace praktika
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var Login = LoginBox.Text;
-            var password = PasswordBox.Text;
+            var password = TextBox1.Text;
             var context = new AppDbContext();
             var user = context.Users.SingleOrDefault(x => x.Login == Login && x.Password == password);
             if (user is null)
@@ -37,6 +37,10 @@ namespace praktika
             }
             Mebox.Text = "";
             Mebox.Text = "Вы успешно вошли в аккаунт!";
+            Window1 privki = new Window1();
+            this.Hide();
+            privki.Show();
+            privki.priv.Text = "Здравствуй, " + LoginBox.Text;
             //MessageBox.Show("Вы успешно вошли в аккаунт!");
         }
 
@@ -46,6 +50,29 @@ namespace praktika
             Registr reg = new Registr();
             reg.Show();
         }
+        bool p = true;
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (p)
+            {
+                PasswordBox.Visibility = Visibility.Collapsed;
+                Glazik.Source = new BitmapImage(new Uri("Resours/2.png", UriKind.Relative));
+                TextBox1.Text = PasswordBox.Password;
+                TextBox1 .Visibility = Visibility.Visible;
+                p = false;
+            }
+            else
+            {
+                PasswordBox.Visibility = Visibility.Visible;
+                Glazik.Source = new BitmapImage(new Uri("Resours/1.png", UriKind.Relative));
+                PasswordBox.Password = TextBox1.Text;
+                TextBox1.Visibility = Visibility.Collapsed;
+                p = true;
+
+            }
+
+        }
+
     }
 
 }
